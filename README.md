@@ -10,7 +10,7 @@ Select a distribution below to view the detailed setup guide.
 
 *   **[Kali Linux](./distros/kali-linux/README.md)**
 *   **[Debian](./distros/debian/README.md)**
-*   Arch Linux *(guide coming soon)*
+*   **[Arch Linux](./distros/arch-linux/README.md)**
 
 ---
 

@@ -1,6 +1,6 @@
 # Debian systemd-nspawn Container Setup Guide
 
-A complete guide to set up and manage Debian containers using systemd-nspawn on Arch Linux.
+A complete guide to set up and manage Debian containers using systemd-nspawn.
 
 ## Table of Contents
 
@@ -19,18 +19,31 @@ A complete guide to set up and manage Debian containers using systemd-nspawn on 
 
 ## Prerequisites
 
-- Arch Linux or Arch-based distribution
 - Root or sudo access
-- Basic knowledge of Linux terminal
+- Basic knowledge of the Linux terminal
+- An Arch-based or Debian-based (e.g., Debian, Ubuntu) host system
 
 ---
 
 ## Installation
 
-### Step 1: Install debootstrap
+This guide provides instructions for both Arch Linux and Debian-based hosts.
 
+### Step 1: Install Dependencies
+
+#### On Arch Linux
+
+Install `debootstrap` from the official repositories:
 ```bash
 sudo pacman -Syu debootstrap
+```
+
+#### On Debian / Ubuntu
+
+Install `debootstrap` from the official repositories:
+```bash
+sudo apt update
+sudo apt install debootstrap
 ```
 
 ### Step 2: Create Container Directory
@@ -214,10 +227,24 @@ This is a warning when starting the container with SNR. It's not critical unless
 
 **Solution (if you need GUI support):**
 
+<details>
+<summary>On Arch Linux</summary>
+
 ```bash
 # On host system
 sudo pacman -S xorg-xhost
 ```
+</details>
+
+<details>
+<summary>On Debian / Ubuntu</summary>
+
+```bash
+# On host system
+sudo apt update
+sudo apt install x11-xserver-utils
+```
+</details>
 
 **Alternative: Disable xhost in SNR**
 
