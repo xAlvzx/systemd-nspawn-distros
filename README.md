@@ -9,7 +9,7 @@ A collection of guides for setting up and managing various Linux distributions a
 Select a distribution below to view the detailed setup guide.
 
 *   **[Kali Linux](./distros/kali-linux/README.md)**
-*   Debian *(guide coming soon)*
+*   **[Debian](./distros/debian/README.md)**
 *   Arch Linux *(guide coming soon)*
 
 ---
